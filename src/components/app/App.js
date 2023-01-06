@@ -1,12 +1,12 @@
-
+import MainBlock from "../headerNav/MainBlock";
+import AboutUs from "../aboutUs/AboutUs";
 
 
 function App() {
   return (
     <div className="app">
-      <header className="App-header">
-       <h1>Hello Coffee</h1>
-      </header>
+        <MainBlock />
+        <AboutUs />
     </div>
   );
 }
