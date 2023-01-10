@@ -10,27 +10,27 @@ const OurBest = () => {
             <div className="container">
                 <h2 className="ourBest-title">Our best</h2>
                 <div className="ourBest-wrapper">
-                    <div className="ourBest-item">
+                    <a href='/' className="ourBest-item">
                         <div className="ourBest-item-img">
                             <img src={ourBestCoffee1} alt="ourBest-item-img-coffee" />
                         </div>
                         <div className="ourBest-item-title">Solimo Coffee Beans 2 kg</div>
                         <div className="ourBest-item-price">10.73$</div>
-                    </div>
-                    <div className="ourBest-item">
+                    </a>
+                    <a href='/' className="ourBest-item">
                         <div className="ourBest-item-img">
                             <img src={ourBestCoffee2} alt="ourBest-item-img-coffee" />
                         </div>
                         <div className="ourBest-item-title">Presto Coffee Beans 1 kg</div>
                         <div className="ourBest-item-price">15.99$</div>
-                    </div>
-                    <div className="ourBest-item">
+                    </a>
+                    <a href='/' className="ourBest-item">
                         <div className="ourBest-item-img">
                             <img src={ourBestCoffee3} alt="ourBest-item-img-coffee" />
                         </div>
                         <div className="ourBest-item-title">AROMISTICO Coffee 1 kg</div>
                         <div className="ourBest-item-price">6.99$</div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

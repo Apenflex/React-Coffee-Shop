@@ -7,7 +7,7 @@ const Header = () => {
         <header className="App-header">
             <nav className="header-nav">
                 <ul className="header-menu">
-                    <img src={headerLogo} alt="coffee-beam-logo" />
+                    <a href="/"><img src={headerLogo} alt="coffee-beam-logo" /></a>
                     <li><a href="/">Coffee house</a></li>
                     <li><a href="/about">Our coffee</a></li>
                     <li><a href="/contact">For your pleasure</a></li>
