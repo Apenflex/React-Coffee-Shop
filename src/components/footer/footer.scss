@@ -12,35 +12,42 @@
         align-items: baseline;
         li {
             padding: 0 29px 0 0;
-            a:hover {
-                color: $hover-color;
-                transition: color 0.3s ease-in-out;
+            a {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 17px;
+                &:hover {
+                    color: $hover-color;
+                    transition: color 0.3s ease-in-out;
+            
+                }
             }
         }
     }
-}
-.img {
-    margin: 20px auto;
-    width: 100px;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 14px;
-        left: 90px;
-        width: 60px;
-        border: 1px solid $main-color-dark;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        top: 14px;
-        right: 90px;
-        width: 60px;
-        border: 1px solid $main-color-dark;
-    }
-    img {
-        display: block;
-        margin: auto;
+
+    .img {
+        margin: 20px auto;
+        width: 100px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 90px;
+            width: 60px;
+            border: 1px solid $main-color-dark;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 90px;
+            width: 60px;
+            border: 1px solid $main-color-dark;
+        }
+        img {
+            display: block;
+            margin: auto;
+        }
     }
 }

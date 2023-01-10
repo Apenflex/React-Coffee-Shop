@@ -1,25 +1,24 @@
-import HeaderNav from '../header/HeaderNav'
+import { Link } from "react-router-dom";
 
 import coffeBeamWhite from '../../resources/img/coffee-beam-white.png'
-import './mainBlock.scss'
+import './mainBlockHome.scss'
 
-const MainBlock = () => {
+const MainBlockHome = () => {
     return (
         <section className='main-section'>
             <div className="container">
-                <HeaderNav />
                 <div className="main-page-header-block">
                     <h1 className="main-page-header">Everything You Love About Coffee</h1>
                     <div className="img">
                         <img src={coffeBeamWhite} alt="coffeBeamWhite" />
                     </div>
                     <p className="main-page-header-text">We makes every day full of energy and taste</p>
-                    <p className='main-page-header-subtitle'>Want to try our beans?</p> 
-                    <a href='/' className="more btn">More</a>
+                    <p className='main-page-header-subtitle'>Want to try our beans?</p>
+                    <Link to='/our-coffee' className="more btn">More</Link>
                 </div>
             </div>
         </section>
     )
 }
 
-export default MainBlock
+export default MainBlockHome
