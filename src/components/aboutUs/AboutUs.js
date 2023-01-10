@@ -1,5 +1,5 @@
 
-import coffeBeamBlack from '../../resources/img/coffee-beam-black.png'
+import coffeeBeamBlack from '../../resources/img/coffee-beam-black.png'
 import './aboutUs.scss'
 
 const AboutUs = () => {
@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className="container">
                 <div className="aboutUs-block">
                     <h2 className="aboutUsTitle">About Us</h2>
-                    <div className="img"><img src={coffeBeamBlack} alt="coffeBeamWhite" /></div>
+                    <div className="img"><img src={coffeeBeamBlack} alt="coffee-Beam-Black" /></div>
                     <p className="aboutUsText">Extremity sweetness difficult behaviour he of.
                         On disposal of as landlord horrible.
                         Afraid at highly months do things on at. Situation recommend objection do intention
