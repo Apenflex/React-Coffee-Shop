@@ -1,0 +1,15 @@
+.btn {
+    width: 75px;
+    height: 30px;
+    background: $main-color-light;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid $main-color-light;
+    border-radius: 4px 0px 0px 4px;
+    font-size: 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 1px 1px 5px rgba(132, 36, 1, 0.809);
+        transition: all 0.4s;
+    }
+}

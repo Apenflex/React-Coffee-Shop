@@ -17,7 +17,8 @@
                 font-size: 12px;
                 line-height: 17px;
                 &:hover {
-                    color: $hover-color;
+                    color: rgba(132, 36, 1, 0.903);
+                    text-shadow: 0px 3px 3px rgba(132, 36, 1, 0.479);
                     transition: color 0.3s ease-in-out;
             
                 }
