@@ -6,7 +6,7 @@ import './ourBest.scss';
 
 const OurBest = () => {
     return (
-        <div className="ourBest">
+        <section className="ourBest">
             <div className="container">
                 <h2 className="ourBest-title">Our best</h2>
                 <div className="ourBest-wrapper">
@@ -33,7 +33,7 @@ const OurBest = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

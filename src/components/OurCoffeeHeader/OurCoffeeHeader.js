@@ -3,9 +3,9 @@ import '../OurCoffeeHeader/ourCoffeeHeader.scss'
 
 const OurCoffeeHeader = () => {
     return (
-        <div className="our-coffee-header">
-            <h2 className="our-coffee-header-title">Our Coffee</h2>
-        </div>
+        <section className="our-coffee-main-block">
+            <h2 className="our-coffee-main-block-title">Our Coffee</h2>
+        </section>
     )
 }
 

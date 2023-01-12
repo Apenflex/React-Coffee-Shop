@@ -1,6 +1,6 @@
-import MainBlockHome from "../mainBlockHome/MainBlockHome";
-import AboutUs from "../aboutUs/AboutUs";
-import OurBest from "../ourBest/OurBest";
+import MainBlockHome from "../MainBlockHome/MainBlockHome";
+import AboutUs from "../AboutUs/AboutUs";
+import OurBest from "../OurBest/OurBest";
 import Footer from "../footer/Footer";
 
 const Home = () => {
