@@ -1,0 +1,101 @@
+@import '../../style/variables.scss';
+
+.about-it-block {
+    display: flex;
+    margin-top: 50px;
+    min-height: 455px;
+    @media (max-width: 740px) {
+        flex-direction: column-reverse;
+    }
+    &__img {
+        display: flex;
+        flex-basis: 50%;
+        margin: 0 20px;
+        @media (max-width: 800px) {
+            margin: 0;
+        }
+        img {
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
+    &__content {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 50px;
+        @media (max-width: 950px) {
+            padding: 20px 20px;
+        }
+        @media (max-width: 868px) {
+            padding: 20px 5px;
+        }
+        .title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35px;
+        }
+        .img {
+            margin: 20px auto;
+            width: 100px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 14px;
+                left: 90px;
+                width: 60px;
+                border: 1px solid $main-color-dark;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 14px;
+                right: 90px;
+                width: 60px;
+                border: 1px solid $main-color-dark;
+            }
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+        .country {
+            margin: 20px auto 0 0;
+            font-size: 14px;
+            line-height: 20px;
+            @media (max-width: 868px) {
+                margin: 0 auto 0 0;
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+        .description {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 20px;
+        }
+        .price {
+            margin: 20px auto 30px 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            @media (max-width: 740px) {
+                margin: 20px 0 0 auto;
+            }
+            span {
+                font-size: 21px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ import OurCoffeeFilter from "../OurCoffeeFilter/OurCoffeeFilter";
 import OurCoffeeList from "../OurCoffeeList/OurCoffeeList";
 import Footer from "../footer/Footer";
 
-const OurCoffee = ({ coffee, filter, onFilterSelect, onUpdateSearch }) => {
+const OurCoffee = ({ coffee, filter, onFilterSelect, onUpdateSearch, onClickCard }) => {
     // console.log(filter);
     return (
         <>
@@ -13,8 +13,9 @@ const OurCoffee = ({ coffee, filter, onFilterSelect, onUpdateSearch }) => {
             <OurCoffeeFilter
                 filter={filter}
                 onFilterSelect={onFilterSelect}
-                onUpdateSearch={onUpdateSearch}/>
-            <OurCoffeeList coffee={coffee} />
+                onUpdateSearch={onUpdateSearch} />
+            <OurCoffeeList coffee={coffee}
+                onClickCard={onClickCard} />
             <Footer />
         </ >
     )

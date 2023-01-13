@@ -10,6 +10,7 @@ import Header from '../HeaderNav/HeaderNav'
 
 import Home from "../HomePage/Home";
 import OurCoffee from "../OurCoffee/OurCoffee";
+import AboutIt from "../AboutIt/AboutIt";
 import ForYourPleasure from "../ForYourPleasure/ForYourPleasure";
 
 
@@ -56,6 +57,7 @@ class App extends Component {
             ],
             term: '',
             filter: "",
+            cardData: {},
         }
     }
 
@@ -94,11 +96,20 @@ class App extends Component {
                 return items;
         }
     };
+
+    onClickCard = (country, price) => {
+        this.setState({
+            cardData: {
+                country: country,
+                price: price,
+            }
+        })
+    }
     
     render() {
-        const { coffee, term, filter } = this.state;
+        const { coffee, term, filter, cardData } = this.state;
         const visibleData = this.filterCoffeeCountry(this.searchCoffee(coffee, term), filter);
-        
+        // console.log(visibleData);
         return (
             <div className="app">
                 <Router>
@@ -111,8 +122,10 @@ class App extends Component {
                                     coffee={visibleData}
                                     filter={filter}
                                     onFilterSelect={this.onFilterSelect}
-                                    onUpdateSearch={this.onUpdateSearch} />}
+                                    onUpdateSearch={this.onUpdateSearch}
+                                    onClickCard={this.onClickCard} />}
                         />
+                        <Route path="/our-coffee/about-it" element={<AboutIt cardData={cardData} />} />
                     <Route path="/for-your-pleasure" element={<ForYourPleasure />} />
                 </Routes>
                 </Router>
