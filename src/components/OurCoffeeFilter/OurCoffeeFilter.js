@@ -9,26 +9,6 @@ class OurCoffeeFilter extends Component {
             term: '',
         }
     }
-    // const { filter, onFilterSelect } = props;
-    // console.log(filter);
-    // const buttonsData = [
-    //     { name: 'Brazil', label: 'Brazil' },
-    //     { name: 'Kenya', label: 'Kenya' },
-    //     { name: 'Columbia', label: 'Columbia' },
-    // ];
-    // const buttons = buttonsData.map(({name, label}) => {
-    //     const active = filter === name;
-    //     const clazz = active ? 'btn-active' : '';
-    //     return (
-    //         <button 
-    //             className={`our-coffee-filter-buttons-block-btn btn ${clazz}`}
-    //             type='button'
-    //             key={name}
-    //             onClick={() => onFilterSelect(name)} >
-    //             { label }
-    //         </button >
-    //     );
-    // });
 
     onUpdateSearch = (e) => {
         const term = e.target.value;
@@ -37,23 +17,22 @@ class OurCoffeeFilter extends Component {
     };
     
     render() {
-        // console.log(this.props);
         const { filter, onFilterSelect } = this.props;
         
         const buttonsData = [
-            { name: 'Brazil', label: 'Brazil' },
-            { name: 'Kenya', label: 'Kenya' },
-            { name: 'Columbia', label: 'Columbia' },
+            { country: 'Brazil', label: 'Brazil' },
+            { country: 'Kenya', label: 'Kenya' },
+            { country: 'Columbia', label: 'Columbia' },
         ];
-        const buttons = buttonsData.map(({ name, label }) => {
-            const active = filter === name;
+        const buttons = buttonsData.map(({ country, label }) => {
+            const active = filter === country;
             const clazz = active ? 'btn-active' : '';
             return (
                 <button
                     className={`our-coffee-filter-buttons-block-btn btn ${clazz}`}
                     type='button'
-                    key={name}
-                    onClick={() => onFilterSelect(name)} >
+                    key={country}
+                    onClick={() => onFilterSelect(country)} >
                     {label}
                 </button >
             );

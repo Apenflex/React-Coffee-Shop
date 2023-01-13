@@ -71,7 +71,7 @@ class App extends Component {
         this.setState({ term });
     };
 
-    searchEmployees = (items, term) => {
+    searchCoffee = (items, term) => {
         if (term.length === 0) {
             return items;
         }
@@ -81,10 +81,24 @@ class App extends Component {
             // return item.name.indexOf(term) > -1;
         });
     };
+
+    filterCoffeeCountry = (items, filter) => {
+        switch (filter) {
+            case 'Brazil':
+                return items.filter((item) => item.country === 'Brazil');
+            case 'Kenya':
+                return items.filter((item) => item.country === 'Kenya');
+            case 'Columbia':
+                return items.filter((item) => item.country === 'Columbia');
+            default:
+                return items;
+        }
+    };
     
     render() {
-        const { coffee, term } = this.state;
-        const visibleData = this.searchEmployees(coffee, term);
+        const { coffee, term, filter } = this.state;
+        const visibleData = this.filterCoffeeCountry(this.searchCoffee(coffee, term), filter);
+        
         return (
             <div className="app">
                 <Router>
@@ -95,6 +109,7 @@ class App extends Component {
                             element={
                                 <OurCoffee
                                     coffee={visibleData}
+                                    filter={filter}
                                     onFilterSelect={this.onFilterSelect}
                                     onUpdateSearch={this.onUpdateSearch} />}
                         />
