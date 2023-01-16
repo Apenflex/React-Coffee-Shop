@@ -7,7 +7,9 @@
     position: absolute;
     li {
         padding: 0 29px 0 0;
-
+        @media (max-width: 380px) {
+            margin: 0 5px;
+        }
         a {
             font-weight: 400;
             font-size: 12px;
