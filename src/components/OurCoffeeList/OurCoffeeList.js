@@ -9,12 +9,12 @@ import './ourCoffeeList.scss';
 const OurCoffeeList = ({ coffee, onClickCard }) => {
     const url = useResolvedPath("").pathname;
     const coffeeCard = coffee.map((item, i) => {
-        // console.log(item.country, item.price)
+        
         return (
             <Link to={`${url}/about-it`}
                 className="our-coffee-list-block-item"
                 key={i}
-                onClick={() => onClickCard(item.country, item.price)}>
+                onClick={() => onClickCard(item.country, item.price)}>  
                 <div className="our-coffee-list-block-item-img">
                     <img src={ourBestCoffee3} alt="ourBest-item-img-coffee" />
                 </div>

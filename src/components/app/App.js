@@ -49,11 +49,21 @@ class App extends Component {
                     country: 'Columbia',
                     price: 12.89,
                 },
-                // {
-                //     name: 'AROMISTICO Test 2 kg',
-                //     country: 'Columbia',
-                //     price: 101.01,
-                // },
+                {
+                    name: 'AROMICO Coffee 3 kg',
+                    country: 'Kenya',
+                    price: 11.98,
+                },
+                {
+                    name: 'AROMICO Coffee 3 kg',
+                    country: 'Columbia',
+                    price: 16.49,
+                },
+                {
+                    name: 'AROMICO Coffee 3 kg',
+                    country: 'Columbia',
+                    price: 15.89,
+                },
             ],
             term: '',
             filter: "",
@@ -110,6 +120,7 @@ class App extends Component {
         const { coffee, term, filter, cardData } = this.state;
         const visibleData = this.filterCoffeeCountry(this.searchCoffee(coffee, term), filter);
         // console.log(visibleData);
+
         return (
             <div className="app">
                 <Router>
@@ -126,7 +137,7 @@ class App extends Component {
                                     onClickCard={this.onClickCard} />}
                         />
                         <Route path="/our-coffee/about-it" element={<AboutIt cardData={cardData} />} />
-                    <Route path="/for-your-pleasure" element={<ForYourPleasure />} />
+                        <Route path="/for-your-pleasure" element={<ForYourPleasure coffee={coffee} />} />
                 </Routes>
                 </Router>
             </div>

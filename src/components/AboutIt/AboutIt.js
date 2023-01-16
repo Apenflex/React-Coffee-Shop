@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import OurCoffeeHeader from "../OurCoffeeHeader/OurCoffeeHeader";
 import Footer from "../footer/Footer";
 
@@ -30,7 +31,9 @@ const AboutIt = ({cardData}) => {
                                 ut aliquip ex ea commodo consequat.
                             </div>
                             <div className="price">Price: <span>{price}$</span></div>
+                            <Link to='/our-coffee' className="back-btn btn">Back</Link>
                         </div>
+                        
                     </div>
                 </div>
             </section>
