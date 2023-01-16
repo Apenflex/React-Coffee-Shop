@@ -8,7 +8,7 @@ const MainBlockHome = () => {
         <section className='main-section'>
             <div className="container">
                 <div className="main-page-header-block">
-                    <h1 className="main-page-header">Everything You Love 3333 Coffee</h1>
+                    <h1 className="main-page-header">Everything You Love About Coffee</h1>
                     <div className="img">
                         <img src={coffeBeamWhite} alt="coffeBeamWhite" />
                     </div>
