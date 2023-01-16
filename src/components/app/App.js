@@ -6,7 +6,7 @@ import {
   // Link
 } from "react-router-dom";
 
-import HeaderNav from '../HeaderNav/HeaderNav'
+import HeaderNav from '../headerNav/HeaderNav'
 
 import Home from "../HomePage/Home";
 import OurCoffee from "../OurCoffee/OurCoffee";
