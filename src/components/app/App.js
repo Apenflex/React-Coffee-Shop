@@ -1,17 +1,17 @@
 import { Component } from "react";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  // Link
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    // Link
 } from "react-router-dom";
 
 import HeaderNav from '../headerNav/HeaderNav'
 
-import Home from "../HomePage/Home";
-import OurCoffee from "../OurCoffee/OurCoffee";
-import AboutIt from "../AboutIt/AboutIt";
-import ForYourPleasure from "../ForYourPleasure/ForYourPleasure";
+import Home from "../homePage/Home";
+import OurCoffee from "../ourCoffee/OurCoffee";
+import AboutIt from "../aboutIt/AboutIt";
+import ForYourPleasure from "../forYourPleasure/ForYourPleasure";
 
 
 class App extends Component {
@@ -115,7 +115,7 @@ class App extends Component {
             }
         })
     }
-    
+
     render() {
         const { coffee, term, filter, cardData } = this.state;
         const visibleData = this.filterCoffeeCountry(this.searchCoffee(coffee, term), filter);
@@ -125,8 +125,8 @@ class App extends Component {
             <div className="app">
                 <Router>
                     <HeaderNav />
-                <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
                         <Route path="/our-coffee"
                             element={
                                 <OurCoffee
@@ -138,10 +138,10 @@ class App extends Component {
                         />
                         <Route path="/our-coffee/about-it" element={<AboutIt cardData={cardData} />} />
                         <Route path="/for-your-pleasure" element={<ForYourPleasure coffee={coffee} />} />
-                </Routes>
+                    </Routes>
                 </Router>
             </div>
         );
-    }    
+    }
 }
 export default App;

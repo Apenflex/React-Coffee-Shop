@@ -1,7 +1,7 @@
-import OurCoffeeHeader from "../OurCoffeeHeader/OurCoffeeHeader";
-import AboutOurBeans from "../AboutOurBeans/AboutOurBeans";
-import OurCoffeeFilter from "../OurCoffeeFilter/OurCoffeeFilter";
-import OurCoffeeList from "../OurCoffeeList/OurCoffeeList";
+import OurCoffeeHeader from "../ourCoffeeHeader/OurCoffeeHeader";
+import AboutOurBeans from "../aboutOurBeans/AboutOurBeans";
+import OurCoffeeFilter from "../ourCoffeeFilter/OurCoffeeFilter";
+import OurCoffeeList from "../ourCoffeeList/OurCoffeeList";
 import Footer from "../footer/Footer";
 
 const OurCoffee = ({ coffee, filter, onFilterSelect, onUpdateSearch, onClickCard }) => {

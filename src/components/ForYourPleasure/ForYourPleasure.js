@@ -5,9 +5,9 @@ import coffeeBeamBlack from '../../resources/img/coffee-beam-black.png'
 import ourBestCoffee3 from '../../resources/img/our-best-coffee3.png'
 import Footer from '../footer/Footer';
 
-import '../ForYourPleasure/forYourPleasure.scss';
+import './forYourPleasure.scss';
 
-const ForYourPleasure = ({coffee}) => {
+const ForYourPleasure = ({ coffee }) => {
     console.log(coffee);
     const GoodsCoffeeCard = coffee.map((item, i) => {
         return (

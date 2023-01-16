@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import OurCoffeeHeader from "../OurCoffeeHeader/OurCoffeeHeader";
+import OurCoffeeHeader from "../ourCoffeeHeader/OurCoffeeHeader";
 import Footer from "../footer/Footer";
 
 import AboutItImg from '../../resources/img/aboutIt-img.jpg'
@@ -7,9 +7,9 @@ import coffeeBeamBlack from '../../resources/img/coffee-beam-black.png'
 
 import './aboutIt.scss';
 
-const AboutIt = ({cardData}) => {
+const AboutIt = ({ cardData }) => {
     // console.log(cardData);
-    const {country, price} = cardData;
+    const { country, price } = cardData;
 
     return (
         <>
@@ -33,7 +33,7 @@ const AboutIt = ({cardData}) => {
                             <div className="price">Price: <span>{price}$</span></div>
                             <Link to='/our-coffee' className="back-btn btn">Back</Link>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>

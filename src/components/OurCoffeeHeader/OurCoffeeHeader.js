@@ -1,5 +1,5 @@
 
-import '../OurCoffeeHeader/ourCoffeeHeader.scss'
+import './ourCoffeeHeader.scss'
 
 const OurCoffeeHeader = () => {
     return (
