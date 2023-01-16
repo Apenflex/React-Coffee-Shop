@@ -4,7 +4,7 @@ import headerLogo from '../../resources/img/coffee-beam-logo.png'
 
 import './headerNav.scss'
 
-const Header = () => {
+const HeaderNav = () => {
     return (
         <div className="container">
             <nav className="header-nav">
@@ -19,4 +19,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default HeaderNav;

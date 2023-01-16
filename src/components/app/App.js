@@ -6,7 +6,7 @@ import {
   // Link
 } from "react-router-dom";
 
-import Header from '../HeaderNav/HeaderNav'
+import HeaderNav from '../HeaderNav/HeaderNav'
 
 import Home from "../HomePage/Home";
 import OurCoffee from "../OurCoffee/OurCoffee";
@@ -124,7 +124,7 @@ class App extends Component {
         return (
             <div className="app">
                 <Router>
-                <Header />
+                    <HeaderNav />
                 <Routes>
                     <Route path="/" element={<Home />} />
                         <Route path="/our-coffee"
