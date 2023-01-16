@@ -1,0 +1,15 @@
+@import '../../style/variables.scss';
+
+.our-coffee-main-block {
+    background: url(../../resources/img/Our-Coffee-Header_bg.jpg) center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+    &-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 58px;
+        color: $main-color-light;
+    }
+}
