@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.49f9f35e.css",
-    "main.js": "/static/js/main.5b54a4ed.js",
-    "static/media/for-your-pleasurre_bg.png": "/static/media/for-your-pleasurre_bg.d3e12d8bcb4aacefb02c.png",
-    "static/media/our-best-coffee_bg.jpg": "/static/media/our-best-coffee_bg.b8003be4876e23b7cbed.jpg",
-    "static/media/main-bg.jpg": "/static/media/main-bg.ff49f25463bd39fc3d2f.jpg",
-    "static/media/Our-Coffee-Header_bg.jpg": "/static/media/Our-Coffee-Header_bg.b6bd254229547b16751a.jpg",
-    "static/media/aboutIt-img.jpg": "/static/media/aboutIt-img.322d5b093a89987c2caa.jpg",
-    "static/media/About-Our-Beans-Photo.png": "/static/media/About-Our-Beans-Photo.d1c16a7cbdb2c91a422e.png",
-    "static/media/about-our-goods-photo.png": "/static/media/about-our-goods-photo.75f26605298b5da06b0b.png",
-    "index.html": "/index.html",
-    "main.49f9f35e.css.map": "/static/css/main.49f9f35e.css.map",
-    "main.5b54a4ed.js.map": "/static/js/main.5b54a4ed.js.map"
+    "main.css": "/React-Coffee-Shop/static/css/main.88b150d8.css",
+    "main.js": "/React-Coffee-Shop/static/js/main.d5818672.js",
+    "static/media/for-your-pleasurre_bg.png": "/React-Coffee-Shop/static/media/for-your-pleasurre_bg.d3e12d8bcb4aacefb02c.png",
+    "static/media/our-best-coffee_bg.jpg": "/React-Coffee-Shop/static/media/our-best-coffee_bg.b8003be4876e23b7cbed.jpg",
+    "static/media/main-bg.jpg": "/React-Coffee-Shop/static/media/main-bg.ff49f25463bd39fc3d2f.jpg",
+    "static/media/Our-Coffee-Header_bg.jpg": "/React-Coffee-Shop/static/media/Our-Coffee-Header_bg.b6bd254229547b16751a.jpg",
+    "static/media/aboutIt-img.jpg": "/React-Coffee-Shop/static/media/aboutIt-img.322d5b093a89987c2caa.jpg",
+    "static/media/About-Our-Beans-Photo.png": "/React-Coffee-Shop/static/media/About-Our-Beans-Photo.d1c16a7cbdb2c91a422e.png",
+    "static/media/about-our-goods-photo.png": "/React-Coffee-Shop/static/media/about-our-goods-photo.75f26605298b5da06b0b.png",
+    "index.html": "/React-Coffee-Shop/index.html",
+    "main.88b150d8.css.map": "/React-Coffee-Shop/static/css/main.88b150d8.css.map",
+    "main.d5818672.js.map": "/React-Coffee-Shop/static/js/main.d5818672.js.map"
   },
   "entrypoints": [
-    "static/css/main.49f9f35e.css",
-    "static/js/main.5b54a4ed.js"
+    "static/css/main.88b150d8.css",
+    "static/js/main.d5818672.js"
   ]
 }
